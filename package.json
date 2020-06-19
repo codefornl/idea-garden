@@ -5,6 +5,8 @@
   "dependencies": {
     "@types/jest": "26.0.0",
     "@types/node": "14.0.13",
+    "node-sass": "^4.14.1",
+    "babel-preset-solid": "0.18.9",
     "solid-js": "^0.18.7",
     "solid-scripts": "0.0.35",
     "typescript": "3.9.5"

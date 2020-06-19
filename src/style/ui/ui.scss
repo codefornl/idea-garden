@@ -1,0 +1,186 @@
+body {
+    margin: 0px;
+    background-color: $back-color;
+    font-family: $font;
+    font-size: $font-size;
+    word-wrap: break-word;
+}
+
+.ui {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.ui.menu {
+    background-color: $base-color;
+    height: 60px;
+    vertical-align: middle;
+    border-bottom: 1px solid $base-border-color;
+    margin-bottom: 20px;
+}
+
+.ui.menuelement {
+    line-height: 60px;
+    float: left;
+    padding-left: $padding;
+    padding-right: $padding;
+    cursor: pointer;
+}
+
+.ui.menuelement.right {
+    float: right;
+}
+
+.ui.menuelement.highlight {
+    background-color: #B3E5CC;
+}
+
+.ui.card {
+    background-color: $base-color;
+    border: 1px solid $base-border-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    margin: 10px;
+}
+
+.ui.card.nopadding {
+    padding: 10px;
+}
+
+label.ui {
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 14pt;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid $base-border-color;
+}
+
+input.ui,
+textarea.ui,
+select.ui {
+    padding: 10px;
+    background-color: $base-color;
+
+    font-family: $font;
+    font-size: $font-size;
+
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid $base-border-color;
+
+    resize: none;
+}
+
+textarea.ui.large {
+    height: 200px;
+}
+
+button.ui {
+    margin-top: 10px;
+    background-color: $button-color;
+    color: $button-text-color;
+    border: 0px;
+    padding: 10px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-family: $font;
+}
+
+.ui.switchbar {
+    border-bottom: 1px solid $base-border-color;
+}
+
+.ui.switch {
+    text-align: center;
+    padding: $padding;
+    cursor: pointer;
+    width: 33.33%;
+    float: left;
+}
+
+.ui.switch.selected {
+    border-bottom: 5px solid $button-color;
+    color: $button-color;
+}
+
+.ui.media-box {
+    background: #FFFFFF;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    border-bottom: 1px solid $base-border-color;
+}
+
+.ui.media-box.image {
+    background: #FFFFFF;
+    padding: 0px;
+    padding-bottom: 25px;
+}
+
+.ui.media-box>img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ui.errorhelp {
+    float: left;
+    margin: 10px;
+    color: #ff0000;
+}
+
+.ui.popup .errorhelp {
+    width: 100%;
+    float: none;
+    min-height: 18pt;
+    margin-bottom: 0px;
+}
+
+.ui.fit {
+    width: 100%;
+}
+
+.ui.hidden {
+    display: none;
+}
+
+
+.ui.popup {
+    z-index: 2;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.ui.overlay {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    animation: 1s fadein;
+}
+
+@keyframes fadein {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}

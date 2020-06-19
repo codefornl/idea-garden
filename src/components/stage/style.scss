@@ -1,0 +1,28 @@
+.stages {
+    .stage {
+        min-height: 200px;
+        clear: both;
+
+        .img {
+            float: left;
+            width: 120px;
+            margin-left: 15px;
+        }
+
+        .explain {
+            text-align: left;
+            margin-left: 155px;
+            height: 100%;
+
+            h2 {
+                margin: 0px;
+            }
+
+            p {
+                padding-top: 0px;
+                font-size: 14pt;
+            }
+        }
+
+    }
+}

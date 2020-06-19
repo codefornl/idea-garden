@@ -1,0 +1,54 @@
+.ui.card::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+.card.footerimage {
+    font-size: 0px;
+}
+
+.ui.card {
+    background-color: #FFFFFF;
+    border: 0px;
+    border-radius: 0px;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+
+    &.color {
+        background-color: #9DD2D7;
+        color: #424242;
+        margin-bottom: 0px;
+        padding-bottom: 140px;
+        margin: 0px;
+    }
+
+    &.footerimage {
+        font-size: 0px;
+    }
+
+    &.colorless {
+        color: #424242;
+        background-color: transparent;
+    }
+
+    &.footer {
+        font-size: 14px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        .third {
+            padding: 50px;
+            padding-bottom: 20px;
+        }
+    }
+
+    >.centerimage {
+        margin-bottom: 0px;
+        max-width: 700px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
