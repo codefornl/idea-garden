@@ -1,7 +1,7 @@
 @import '../../style/variables.scss';
 
 .ui.menu {
-    background-color: $menu-color;
+    background-color: $primary-color !important;
     color: #424242;
     border: 0px;
     display: block;
@@ -44,7 +44,7 @@
     .ui.menuelement.option,
     .ui.menuelement.right {
         width: 100%;
-        background-color: #9DD2D7;
+        background-color: $primary-color;
         display: block;
         clear: both;
         float: left;

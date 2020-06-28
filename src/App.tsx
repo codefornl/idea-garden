@@ -2,10 +2,11 @@ import { Switch, Match } from 'solid-js';
 import { createRouteHandler } from './Router';
 import { Menu } from './components/menu';
 import { Home } from './pages/home';
-import { Ideas } from './pages/ideas';
+import { IdeasPage } from './pages/ideasPage';
 import { Explain } from './pages/explain';
 import { Prize } from './pages/prize';
 import { Platform } from './pages/platform';
+import { IdeaPage } from './pages/ideaPage';
 
 
 function App() {
@@ -20,8 +21,13 @@ function App() {
           </Match>
         </Switch>
         <Switch>
+          <Match when={matches("idea")}>
+            <IdeaPage idea={window.location.hash.slice(2).split('/')[1]}/>
+          </Match>
+        </Switch>
+        <Switch>
           <Match when={matches("ideas")}>
-            <Ideas />
+            <IdeasPage />
           </Match>
         </Switch>
         <Switch>

@@ -5,7 +5,7 @@ import { createSignal, onCleanup } from "solid-js";
  */
 export function createRouteHandler() {
     const [location, setLocation] = createSignal(
-        window.location.hash.slice(2) || "home"
+        window.location.hash.slice(2).split('/')[0] || "home"
     )
 
     const locationHandler = () => {
@@ -13,7 +13,8 @@ export function createRouteHandler() {
         if (location === "") {
             location = "home";
         }
-        console.log(location)
+        // If there is another slash involved, pass the second part as parameter.
+        location = location.split('/')[0]
         setLocation(location)
     }
 

@@ -1,6 +1,6 @@
 import './style.scss'
 
-type style = "color" | "colorless" | "footerimage" | "footer"
+type style = "color" | "colorless" | "footerimage" | "footer" | "ideacard" | "ideacard-full" | "addition"
 
 interface Properties {
     children: any
@@ -8,8 +8,13 @@ interface Properties {
     centered?: boolean
 }
 
-export const Card = (properties: Properties) => (
-    <div class={`ui card ${properties.style.join(" ")}`}>
-       {properties.children}
-    </div>
-)
+export const Card = (properties: Properties) => {
+    const style = ['ui', 'card']
+    
+    return (
+
+        <div class={style.concat(properties.style).join(" ")}>
+            {properties.children}
+        </div>
+    )
+}

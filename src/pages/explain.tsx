@@ -35,7 +35,7 @@ export const Explain = () => {
     ]
     return (
         <Page>
-            <Section size={["col-12"]}>
+            <Section size={"col-12"}>
                 <Card style={["colorless"]}>
                     <Paragraph centered={true} title="Hoe werkt de Ideënvijver?">
                         Elke vis in de vijver is een idee. Hoe groter je vis, hoe verder je 

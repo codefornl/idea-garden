@@ -1,18 +1,19 @@
 import './style.scss';
 import { Footer } from '../components/footer';
 
-type size = "col-12"
+type size = "col-12" | "col-6" | "col-8" | "col-2"
+
 interface Properties {
     children: any
 }
 
 interface SectionProperties {
     children: any
-    size?: size[]
+    size?: size
 }
 
 export const Section = (properties: SectionProperties) => (
-    <div class={`ui ${properties.size ? properties.size.join(" ") : ""}`}>
+    <div class={`ui ${properties.size ? properties.size : "col-12"}`}>
         {properties.children}
     </div>
 )

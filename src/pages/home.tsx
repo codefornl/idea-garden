@@ -6,12 +6,12 @@ import { Paragraph } from '../components/paragraph';
 
 export const Home = () => (
     <Page>
-        <Section size={["col-12"]}>
+        <Section size={"col-12"}>
             <Card style={["colorless"]}>
                 <div class="centerimage"><img class="" src="static/fishrow2.png" /></div>
             </Card>
         </Section>
-        <Section size={["col-12"]}>
+        <Section size={"col-12"}>
             <Card style={["color"]}>
                 <Paragraph centered={true}>
                     <p>Eindhoven nodigt je uit om <em>jouw stad</em> mooier, leuker, chiller en aantrekkelijker te maken!</p>
@@ -22,7 +22,7 @@ export const Home = () => (
                 <Video url="https://www.youtube.com/embed/hseiRm-JzXg?showinfo=0" />
             </Card>
         </Section>
-        <Section size={["col-12"]}>
+        <Section size={"col-12"}>
             <Card style={["color"]}>
                 <p class="centerimage">
                     <Button type="submit" style={["no-float"]}>

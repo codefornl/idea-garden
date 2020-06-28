@@ -1,0 +1,94 @@
+.ideacard,
+.ideacard-full {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #fff;
+
+    h3 {
+        font-family: "Amatic SC";
+        font-size: 34pt;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    .label {
+        color: #555;
+        font-size: 12pt;
+        font-variant: small-caps;
+    }
+}
+
+.addition {
+    .image {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.ideacard {
+    .info {
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    .top {
+        display: flex;
+    }
+
+    h3 {
+        cursor: pointer;
+    }
+
+
+    .voteset {
+        float: left;
+    }
+
+    .metric {
+        .number {
+            font-size: 20pt;
+            padding: 0.5rem;
+        }
+
+    }
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5em 0.5em 0;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+
+    .metric {
+        .number {
+            font-size: 20pt;
+            padding: 0.5rem;
+        }
+
+        .label {
+            color: #555;
+            font-size: 12pt;
+            font-variant: small-caps;
+        }
+    }
+
+    div {
+        img {
+            padding: 0.25rem;
+        }
+    }
+}
