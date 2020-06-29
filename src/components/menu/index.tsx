@@ -13,7 +13,7 @@ export const Menu = (properties: any) => {
     return (
         <>
             <div class="ui menu">
-                <img src="static/fish logo.png" class="ui menuelement" />
+                <img src="static/fish-logo.svg" class="ui menuelement" />
                 <h3 class="ui menuelement">Ideeënvijver</h3>
                 <span class="hamburger" onClick={toggle}></span>
                 <nav style={state.shown ? "display:inline-block;": ""}>

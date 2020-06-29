@@ -8,7 +8,13 @@ export const Home = () => (
     <Page>
         <Section size={"col-12"}>
             <Card style={["colorless"]}>
-                <div class="centerimage"><img class="" src="static/fishrow2.png" /></div>
+                <div class="icon-row">
+                    <div>Doe<br/><img class="" src="static/fish-1.svg" /></div>
+                    <div>Mee<br/><img class="" src="static/fish-2.svg" /></div>
+                    <div>Met<br/><img class="" src="static/fish-3.svg" /></div>
+                    <div>Jouw<br/><img class="" src="static/fish-4.svg" /></div>
+                    <div>Idee<br/><img class="" src="static/fish-5.svg" /></div>
+                </div>
             </Card>
         </Section>
         <Section size={"col-12"}>

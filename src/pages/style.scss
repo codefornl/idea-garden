@@ -4,3 +4,15 @@
     content: " ";
     display: block;
 }
+
+.icon-row {
+    display:flex;
+    width:100%;
+    justify-content:Center;
+    div {
+        text-align: center;
+        img {
+            width: 100%;
+        }
+    }
+}

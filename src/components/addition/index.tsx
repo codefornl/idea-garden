@@ -4,7 +4,7 @@ export const Addition = () => (
     <>
         <div class="ui-menu">
             <div></div>
-            <img src="static/fish logo.png" class="ui menuelement" />
+            <img src="static/fish-logo.svg" class="ui menuelement" />
             <nav><h3 class="ui menuelement">Ideeënvijver</h3>
                 <img src="static/hamburger.png" class="ui menuelement hamburger" />
                 <a href="#home" class="ui menuelement option fold">Challenge</a>

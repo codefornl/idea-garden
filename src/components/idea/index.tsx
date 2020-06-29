@@ -14,7 +14,7 @@ export const IdeaComponentCompact = (properties: Properties) => {
         <Card style={['ideacard']}>
             <div class="top">
                 <div class="status">
-                    <img class="largefish" src="static/stage5.png" />
+                    <img class="largefish" src="static/fish-5.svg" />
                 </div>
                 <div class="info">
                     <a href={`/#/idea/${properties.idea._id}`}>
@@ -40,7 +40,7 @@ export const IdeaComponentFull = (properties: Properties) => {
         <>
             <Section size={"col-2"}>
                 <div class="stats">
-                    <div><img class="largefish" src="static/stage5.png" /></div>
+                    <div><img class="largefish" src="static/fish-5.svg" /></div>
                     <div class="metric">
                         <span class="number">{properties.idea.votecount}</span>
                         <span class="label">credits</span>

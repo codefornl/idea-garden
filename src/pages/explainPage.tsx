@@ -8,27 +8,27 @@ import { Stages, StageProperties } from '../components/stage/stage';
 export const ExplainPage = () => {
     const stages: StageProperties[] = [
         {
-            image: "static/stage1_hi.png",
+            image: "static/fish-1.svg",
             title: "Het kikkervisje",
             text: "Je hebt een idee bedacht en gepost"
         },
         {
-            image: "static/stage2_hi.png",
+            image: "static/fish-2.svg",
             title: "Hetkleine visje",
             text: "e hebt jouw idee aangevuld met extra informatie en schetsen/afbeeldingen!"
         },
         {
-            image: "static/stage3_hi.png",
+            image: "static/fish-3.svg",
             title: "De grote vis",
             text: "Jouw idee spreekt anderen aan! Er word op gestemd, toevoegingen gedaan, vragen gesteld en schetsen toegevoegd."
         },
         {
-            image: "static/stage4_hi.png",
+            image: "static/fish-4.svg",
             title: "De kei grote vis",
             text: "Jouw idee staat in de top 5! Er is zo veel op gestemd dat jouw idee tot één van de vijf beste ideeën hoort."
         },
         {
-            image: "static/stage4_hi.png",
+            image: "static/fish-5.svg",
             title: "De koningsvis",
             text: "Jouw idee staat op nummer 1 in de top 5! Een jury zal uiteindelijk kiezen of jouw idee ook daadwerkelijk de titel “Koningsvis 2016” verdient."
         }
