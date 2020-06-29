@@ -23,6 +23,21 @@
 }
 
 .addition {
+    .comment {
+        border-top: 1px solid #ccc;
+    }
+    .comment::before {
+        font-family: "Amatic SC";
+        content: "›";
+        font-size: 16pt;
+        padding-right: 0.6em;
+    }
+    .description::before {
+        font-family: "Amatic SC";
+        content: "»";
+        font-size: 16pt;
+        padding-right: 0.2em;
+    }
     .image {
         margin-left: -20px;
         margin-right: -20px;

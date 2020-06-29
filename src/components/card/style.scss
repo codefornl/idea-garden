@@ -1,5 +1,6 @@
 @import '../../style/variables.scss';
-.ui.card::after {
+
+.card::after {
     clear: both;
     content: " ";
     display: block;
@@ -9,7 +10,7 @@
     font-size: 0px;
 }
 
-.ui.card {
+.card {
     background-color: #FFFFFF;
     border: 0px;
     border-radius: 0px;

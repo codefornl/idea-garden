@@ -78,7 +78,7 @@ export const IdeaComponentFull = (properties: Properties) => {
                         </Show>
                         <For each={addition.comments} fallback={<></>}>
                         {c => (
-                            <div>{c.comment}</div>
+                            <p class="comment">{c.comment}</p>
                         )}
                         </For>
                     </Card>

@@ -4,15 +4,42 @@
     background-color: $primary-color !important;
     color: #424242;
     border: 0px;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     a {
         color: #424242;
         text-decoration: none;
+
         &:hover {
             color: #272727;
             text-decoration: underline;
         }
     }
+
+
+    .hamburger {
+        position: relative;
+        width: 1.4em;
+        height: 0.8em;
+        margin: 1.2em;
+        border-top: 0.2em solid #555;
+        border-bottom: 0.2em solid #555;
+        cursor: pointer;
+    }
+
+    .hamburger:before {
+        content: "";
+        position: absolute;
+        top: 0.3em;
+        left: 0px;
+        width: 100%;
+        border-top: 0.2em solid #555;
+    }
+
+
 }
 
 .ui.menu img {
@@ -25,10 +52,6 @@
     font-size: 14pt;
 }
 
-.ui.menu .hamburger {
-    display: none;
-}
-
 .ui .popup .register {
     float: right;
     margin-right: 20px;
@@ -38,21 +61,31 @@
     text-decoration: underline;
     cursor: pointer;
 }
-
-@media only screen and (max-width: 500px) {
-
+@media only screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: inline-block;
+    }
     .ui.menuelement.option,
     .ui.menuelement.right {
         width: 100%;
-        background-color: $primary-color;
+        background-color: white;
         display: block;
         clear: both;
         float: left;
-        border-top: 1px solid #8DC2C7;
+        text-align: center;
+        border-bottom: 1px solid #8DC2C7;
+        &:hover {
+            font-size: 24px;
+        }
     }
 
     .ui.menuelement.fold {
-        display: none;
+        display: block;
     }
 
     .ui.menuelement.unfold {
@@ -62,10 +95,9 @@
     nav {
         width: 100%;
         background-color: white;
+        display: none;
+        flex-direction: column;
+        z-index: 1;
     }
 
-    .ui.menu .hamburger {
-        float: right;
-        display: none;
-    }
 }

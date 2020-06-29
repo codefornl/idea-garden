@@ -7,7 +7,7 @@ interface Properties {
     children?: any
 }
 export const Paragraph = (properties: Properties) => (
-    <p class={`${properties.centered ? "centerimage": ""}`}>
+    <p class={`${properties.centered ? "paragraph centerimage": "paragraph"}`}>
         <Show when={properties.title}>
             <h2>{properties.title}</h2>
         </Show>

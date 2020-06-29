@@ -43,13 +43,13 @@ export interface Idea {
 }
 
 export const fetchIdea = async (id: string) => {
-    const r = await fetch(`http://localhost:8080/api/idea/${id}`)
+    const r = await fetch(`https://ideeen.codefor.nl/api/idea/${id}`)
     const final: IdeaResponse = await r.json()
     return final
 }
 
 export const fetchIdeas = async () => {
-    const r = await fetch(`http://localhost:8080/api/ideas`)
+    const r = await fetch(`https://ideeen.codefor.nl/api/ideas`)
     const final: IdeasResponse = await r.json()
     return final
 }
