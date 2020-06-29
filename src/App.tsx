@@ -7,6 +7,7 @@ import { Explain } from './pages/explain';
 import { Prize } from './pages/prize';
 import { Platform } from './pages/platform';
 import { IdeaPage } from './pages/ideaPage';
+import { RulesPage } from './pages/rulesPage';
 
 
 function App() {
@@ -43,6 +44,11 @@ function App() {
         <Switch>
           <Match when={matches("platform")}>
             <Platform />
+          </Match>
+        </Switch>
+        <Switch>
+          <Match when={matches("rules")}>
+            <RulesPage/>
           </Match>
         </Switch>
       </div>

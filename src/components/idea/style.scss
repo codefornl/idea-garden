@@ -5,7 +5,9 @@
     padding: 1em;
     box-sizing: border-box;
     background-color: #fff;
-
+    &:first-child {
+        margin-top: 0 !important;
+    }
     h3 {
         font-family: "Amatic SC";
         font-size: 34pt;
