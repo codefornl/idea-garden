@@ -3,9 +3,9 @@ import { createRouteHandler } from './Router';
 import { Menu } from './components/menu';
 import { Home } from './pages/home';
 import { IdeasPage } from './pages/ideasPage';
-import { Explain } from './pages/explain';
-import { Prize } from './pages/prize';
-import { Platform } from './pages/platform';
+import { ExplainPage } from './pages/explainPage';
+import { PrizePage } from './pages/prizePage';
+import { PlatformPage } from './pages/platformPage';
 import { IdeaPage } from './pages/ideaPage';
 import { RulesPage } from './pages/rulesPage';
 
@@ -20,33 +20,21 @@ function App() {
           <Match when={matches("home")}>
             <Home />
           </Match>
-        </Switch>
-        <Switch>
           <Match when={matches("idea")}>
             <IdeaPage idea={window.location.hash.slice(2).split('/')[1]}/>
           </Match>
-        </Switch>
-        <Switch>
           <Match when={matches("ideas")}>
             <IdeasPage />
           </Match>
-        </Switch>
-        <Switch>
           <Match when={matches("explain")}>
-            <Explain />
+            <ExplainPage />
           </Match>
-        </Switch>
-        <Switch>
           <Match when={matches("prize")}>
-            <Prize />
+            <PrizePage />
           </Match>
-        </Switch>
-        <Switch>
           <Match when={matches("platform")}>
-            <Platform />
+            <PlatformPage />
           </Match>
-        </Switch>
-        <Switch>
           <Match when={matches("rules")}>
             <RulesPage/>
           </Match>

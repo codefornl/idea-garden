@@ -5,7 +5,7 @@ import { Paragraph } from '../components/paragraph';
 import { Stages, StageProperties } from '../components/stage/stage';
 
 
-export const Explain = () => {
+export const ExplainPage = () => {
     const stages: StageProperties[] = [
         {
             image: "static/stage1_hi.png",
