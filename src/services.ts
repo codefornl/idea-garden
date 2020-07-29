@@ -2,12 +2,16 @@ interface Response {
     auth: boolean
     success: boolean
 }
-export interface IdeasResponse extends Response{
+export interface IdeasResponse extends Response {
     data: Idea[]
 }
 
-export interface IdeaResponse extends Response{
+export interface IdeaResponse extends Response {
     data: Idea
+}
+
+export interface ChallengesResponse extends Response {
+    data: Challenge[]
 }
 
 export interface Content {
@@ -25,6 +29,26 @@ export interface Addition {
     comments: Comment[]
 }
 
+export interface Paragraph {
+    "_id": string
+    title: string
+    text: string
+    sequence: number
+}
+
+export interface Challenge {
+    "_id": string,
+    title: string,
+    leader: {
+        image: string,
+        video: {
+            type: string,
+            source: string,
+            text: string
+        }
+    },
+    paragraphs: Paragraph[]
+}
 export interface Idea {
     "_id": string
     title: string
@@ -40,6 +64,12 @@ export interface Idea {
     created: string
     badge: number
     position: number
+}
+
+export const fetchChallenges = async () => {
+    const r = await fetch(`https://ideeen.codefor.nl/api/challenges`)
+    const final: ChallengesResponse = await r.json()
+    return final
 }
 
 export const fetchIdea = async (id: string) => {
