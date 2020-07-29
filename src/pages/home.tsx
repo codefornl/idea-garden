@@ -1,10 +1,11 @@
-import { Page, Section } from './page';
-import { Card } from '../components/card';
-import { Video } from '../components/video';
-import { Button } from '../components/button';
-import { Paragraph } from '../components/paragraph';
-import { fetchChallenges, ChallengesResponse } from '../services';
+import { Page, Section } from './page'
+import { Card } from '../components/card'
+import { Video } from '../components/video'
+import { Button } from '../components/button'
+import { Paragraph } from '../components/paragraph'
+import { fetchChallenges, ChallengesResponse } from '../services'
 import { createResource, Switch, Match, For } from 'solid-js';
+import moment from 'moment'
 
 export const Home = () => {
     let [response, loadChallenges] = createResource<ChallengesResponse>()
@@ -62,12 +63,19 @@ export const Home = () => {
                                         </For>
                                     </Card>
                                 </Section>
+                                <Section size={"col-12"}>
+                                    <Card style={["color"]}>
+                                        <Paragraph centered={true}>
+                                            <i>{i.disclaimer}</i>
+                                            <p><small>{moment(i.createdAt).format('D-MMM-Y')} - {moment(i.updatedAt).format('D-MMM-Y')}</small></p>
+                                        </Paragraph>
+                                    </Card>
+                                </Section>
                             </>
                         )}
                     </For>
                 </Match>
             </Switch>
-
         </Page>
     )
 }

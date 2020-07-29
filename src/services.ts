@@ -37,17 +37,21 @@ export interface Paragraph {
 }
 
 export interface Challenge {
-    "_id": string,
-    title: string,
+    "_id": string
+    title: string
     leader: {
-        image: string,
+        image: string
         video: {
-            type: string,
-            source: string,
+            type: string
+            source: string
             text: string
         }
-    },
+    }
     paragraphs: Paragraph[]
+    disclaimer: string
+    createdAt: string
+    updatedAt: string
+
 }
 export interface Idea {
     "_id": string

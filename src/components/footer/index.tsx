@@ -9,28 +9,24 @@ export const Footer = () => (
             </div>
         </Card>
         <Card style={["color", "footer"]}>
-            <div class="ui col-4 third">
+            <div class="ui col-6 third logos">
                 <div>
-                    Dit crowdsourcing platform is een initiatief van de gemeente Eindhoven, en is als pilot ontwikkeld door Code for NL.
-                    Vragen? Neem contact op met <a href="mailto:info@codefor.nl">info@codefor.nl</a>
+                    <p>Ideeënvijver is een initiatief ontwikkeld door de community van:</p>
+                    <a href="https://codefor.nl"><img class="keepsize" src="static/Logo-orange-01.png" width="200"/></a>
                 </div>
             </div>
-            <div class="ui col-4 third logos">
-                <div><img class="keepsize" src="static/eindhoven.png" /></div>
-                <div><img class="keepsize" src="static/codefornl.png" /></div>
-            </div>
-            <div class="ui col-4 third right">
+            <div class="ui col-6 third right">
                 <div>
-                    <a href="/#/rules">'menu.rules'</a>
+                    <a href="/#/rules">spelregels</a>
                 </div>
                 <div>
-                    <a href="/#/explain">'menu.explain'</a>
+                    <a href="/#/explain">uitleg</a>
                 </div>
                 <div>
-                    <a href="/#/">'menu.challenge'</a>
+                    <a href="/#/">home</a>
                 </div>
                 <div>
-                    <a href="mailto:info@ideeenvijver.nl">'menu.contact'</a>
+                    <a href="mailto:info@ideeenvijver.nl">contact</a>
                 </div>
             </div>
         </Card>
